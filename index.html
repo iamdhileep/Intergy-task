@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Intergy Task</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!--******************StyleSheets and Bootstrap 5.0.2 Plugin Start*******************  -->
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap5.0/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap5.0/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap5.0/bootstrap-grid.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap5.0/bootstrap-grid.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/custom/style.css">
+	<link href="https://unpkg.com/@yaireo/tagify/dist/tagify.css" rel="stylesheet" type="text/css" />
+	<!--******************StyleSheets and Bootstrap 5.0.2 Plugin End*******************  -->
+</head>
+
+<body>
+	<div class="container">
+		<main class="mt-5 mb-4">
+			<div class="d-flex align-content-center flex-wrap">
+				<div class="col-md-12 col-sm-12 mt-5">					
+					<!-- *********************** Breadcrob Section Start *********************** -->
+					<div class="row mb-3">
+						<div class="col-md-9 col-sm-12">
+							<nav aria-label="breadcrumb">
+								<ol class="breadcrumb mb-0">
+									<li class="breadcrumb-item fw-bold"><a class="fs-5 text-orange text-decoration-none" href="#">Parent</a></li>
+									<li class="breadcrumb-item fw-bold active" aria-current="page"><a class="fs-5 text-orange text-decoration-none" href="#">Guardian Portal</a></li>
+								</ol>
+								<p class="fst-normal mb-0 text-white">Child Details</p>
+							</nav>
+						</div>
+						<div class="col-md-3 col-sm-12 d-flex sm-center justify-content-end">
+							<button type="button" class="btn btn-orange text-white fs-6 btn-height-40 mt-2"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-circle-fill plus-icon" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
+							</svg> ADD A CHILD</button>
+						</div>
+					</div>
+					<!-- *********************** Breadcrob Section End *********************** -->
+
+					<!--*********************** Form Area Start ***********************-->
+					<div class="card bg-light-blue">
+						<div class="card-body">
+							<form autocomplete="off">
+								<div class="row">
+									
+									<!--*********************** Profile Photo Start *********************** -->
+									<div class="col-xl-12 col-md-12 col-sm-12 mb-4">
+										<div class="avatar-upload mx-auto d-block">
+											<div class="avatar-edit">
+												<input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" onchange="previewFile()"/>
+												<label for="imageUpload"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#f15524" class="bi bi-camera-fill icon-margin" viewBox="0 0 16 16"><path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/><path d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0z"/></svg></label>
+											</div>
+											<div class="avatar-preview">
+												<img class="profile-picture" id="imagePreview" src="assets/image/img-avatar.png">
+											</div>
+										</div>
+									</div>
+									<!--*********************** Profile Photo End *********************** -->
+
+									<!--*********************** First Name Start *********************** -->
+									<div class="col-xl-6 col-md-6 col-sm-12">
+										<div class="mb-3">
+											<label for="exampleFormControlInput1" class="form-label text-white">First Name</label> <span class="fw-bold text-danger">*</span>
+											<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+										</div>
+									</div>
+									<!--*********************** First Name End *********************** -->
+									
+									<!--*********************** Last Name Start *********************** -->
+									<div class="col-xl-6 col-md-6 col-sm-12">
+										<div class="mb-3">
+											<label for="exampleFormControlInput1" class="form-label text-white">Last Name</label> <span class="fw-bold text-danger">*</span>
+											<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+										</div>
+									</div>
+									<!--*********************** Last Name End *********************** -->
+									
+									<!--*********************** Date Of Birth Start *********************** -->
+									<div class="col-xl-6 col-md-6 col-sm-12">
+										<div class="mb-3">
+											<label for="exampleFormControlInput1" class="form-label text-white">Date of Birth</label> <span class="fw-bold text-danger">*</span>
+											<div class="input-group mb-3">
+												<input type="text" class="form-control border-end-0" placeholder=" " aria-describedby="basic-addon2"><span class="input-group-text bg-transparent border-start-0" id="basic-addon2"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#8392a5" class="bi bi-calendar4-week text-right" viewBox="0 0 16 16"><path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1H2zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5z"/><path d="M11 7.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-2 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/></svg>
+												</span>
+											</div>
+										</div>
+									</div>
+									<!--*********************** Date Of Birth End *********************** -->
+
+									<!--*********************** Gender Start *********************** -->
+									<div class="col-xl-6 col-md-6 col-sm-12">
+										<div class="mb-3">
+											<label for="exampleFormControlInput1" class="form-label text-white">Gender</label> <span class="fw-bold text-danger">*</span>
+											<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#8392a5" class="bi bi-chevron-down align-arrow" viewBox="0 0 16 16">
+												<path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+											</svg>
+											<select class="form-select" aria-label="Default select example">
+												<option selected>Male</option>
+												<option value="1">Female</option>
+											</select>
+										</div>
+									</div>
+									<!--*********************** Genter End *********************** -->
+
+									<!--*********************** Sport Section Start *********************** -->
+									<div class="col-xl-6 col-md-6 col-sm-12">
+										<div class="mb-3">
+											<label for="exampleFormControlInput1" class="form-label text-white">Preferred Sport</label> <span class="fw-bold text-danger">*</span>
+											<input name='tags' value='Foot ball' class="form-control" autofocus>
+										</div>
+									</div>
+									<!--*********************** Sport Section End *********************** -->
+
+									<!--*********************** Player Bio discription *********************** -->
+									<div class="col-xl-6 col-md-6 col-sm-12">
+										<div class="mb-3">
+											<label for="exampleFormControlInput1" class="form-label text-white">Player Bio</label>
+											<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+										</div>
+									</div>
+									<!--*********************** Player Bio discription *********************** -->
+
+								</div>
+							</form>
+						</div>
+					</div>
+					<!--*********************** Form Area End *********************** -->
+				</div>
+			</div>
+		</main>		
+	</div>
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<script src="https://unpkg.com/@yaireo/tagify"></script>
+	<script src="https://unpkg.com/@yaireo/tagify@3.1.0/dist/tagify.polyfills.min.js"></script>
+	<script src="assets/js/custom/multi.js"></script>
+	<script src="assets/js/bootstrap.bundle.js"></script>
+</body>
+</html>

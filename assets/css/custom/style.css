@@ -1,0 +1,221 @@
+/*-------------------------------------Welcome to Dhileep Stylesheet Section---------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------*/
+
+/*------------------------------------------------------*/
+/*---------------Commen Section Css Start---------------*/
+body{
+	background: #122136;
+}
+.bg-light-blue{
+	background: #293e5a;
+	border-radius: 1rem;
+}
+/*---------------Commen Section Css End---------------*/
+/*----------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------*/
+
+/*------------------------------------------------------*/
+/*---------------Avatar Section Css Start---------------*/
+.profile-picture{
+	border: 1px solid #f15524;
+}
+.icon-margin{
+	margin: 9px;
+}
+.avatar-upload {
+	position: relative;
+	width:8em;
+	height:8em;
+	margin-top:-5.2em;
+	background-size:cover;
+	border-radius:50%;
+}
+.avatar-upload .avatar-edit {
+	position: absolute;
+	right: 0px;
+	z-index: 1;
+	top: 90px;
+}
+.avatar-upload .avatar-edit input {
+	display: none;
+}
+.avatar-upload .avatar-edit input + label {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	margin-bottom: 0;
+	border-radius: 100%;
+	background: #FFFFFF;
+	border: 1px solid #f15524;
+	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+	cursor: pointer;
+	font-weight: normal;
+	transition: all 0.2s ease-in-out;
+}
+.avatar-upload .avatar-edit input + label:hover {
+	background: #f1f1f1;
+	border-color: #d6d6d6;
+}
+.avatar-upload .avatar-preview {
+	position: relative;
+	border-radius: 100%;
+	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.avatar-upload .avatar-preview > img {
+	width: 100%;
+	height: 100%;
+	border-radius: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+/*---------------Avatar Section Css End---------------*/
+/*----------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------*/
+/*---------------Theme Orange Section Css Start---------------*/
+.text-orange{
+	color: #f15524;
+}
+.btn-orange{
+	background: #f15524;
+}
+.btn-height-40{
+	height: 40px;
+}
+.plus-icon{
+	margin-top: -5px;
+	font-weight: 500 !important;
+}
+.breadcrumb-item+.breadcrumb-item::before {
+	margin-top: 3px;
+	color: #f15524;
+}
+/*---------------Theme Orange Section Css End---------------*/
+/*----------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------*/
+/*---------------Form Section Css Start---------------*/
+.align-arrow{
+	position: absolute;
+	float: right;
+	right: 30px;
+	margin-top: 50px;
+}
+.form-control{
+	background-color: #293e5a;
+	color: #ffffff;
+	border-radius: 0.55rem;
+	padding: 0.75rem 0.75rem;
+	border: 1px solid #8392a5;
+}
+.form-select{
+	color: #ffffff;
+	background-color: #293e5a;
+	border-radius: 0.55rem;
+	padding: 0.75rem 0.75rem;
+	border: 1px solid #8392a5;
+	box-shadow: none;
+}
+.input-group-text{
+	border-radius: 0px 8px 8px 0px;
+	border: 1px solid #8392a5;
+}
+.form-control:focus{
+	background-color: #293e5a;
+	border: 1px solid #3595f6;
+	box-shadow: none;
+}
+.form-select:focus {
+	border: 1px solid #3595f6;
+	outline: 0;
+	box-shadow: none;
+}
+/*---------------Form Section Css End---------------*/
+/*--------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------*/
+/*---------------Input tag Css Start---------------*/
+.tagify__tag__removeBtn {
+	order: unset !important;
+	display: inline-flex;
+	justify-content: center;
+	border-radius: 50px;
+	cursor: pointer;
+	font-size: 22px !important;
+	background: 0 0;
+	background: var(--tag-remove-btn-bg,none);
+	color: var(--tag-remove-btn-color,#000);
+	width: auto !important;
+	height: 32px !important;
+	margin-right: 0 !important;
+	margin-left: 6px !important;
+	overflow: hidden;
+	transition: .2s ease-out;
+}
+.tagify {
+	--tag-bg: #293e5a !important;
+	--tags-border-color: #8392a5 !important;
+	--tag-hover: #293e5a !important;
+	--tag-remove-bg: rgb(255,255,255,0%) !important;
+	padding: 20px 15px !important;
+}
+.tagify__tag{
+	border: 1px solid #8392a5 !important;
+	border-radius: 3px;
+}
+.tagify__tag:hover{
+	border: 1px solid #f15524 !important;
+	border-radius: 3px;
+}
+.tagify__tag-text{
+	color: #f15524;
+	font-weight: 500;
+}
+.tagify__tag__removeBtn{
+	color: #f15524 !important;
+}
+.tagify__tag:hover:not([readonly]) div::before {
+	border: 1px solid #f15524 !important;
+}
+.tagify__tag__removeBtn:hover {
+	background: #293e5a !important;
+}
+/*---------------Input tag Css End---------------*/
+/*-----------------------------------------------*/
+
+/*----------------------------------------------------------------------------------*/
+
+/*-----------------------------------------------*/
+/*---------------Media query Start---------------*/
+@media screen and (max-width: 600px) and (min-width: 300px) {
+	.breadcrumb {
+		text-align: center;
+		justify-content: center;
+		margin-top: -50px !important;
+		margin-bottom: 50px !important;
+	}
+	.fst-normal {
+		text-align: center;
+		justify-content: center;
+		margin-top: -50px !important;
+		margin-bottom: 50px !important;
+	}
+	.sm-center{
+		justify-content: center !important;
+		margin-top: -40px !important;
+		margin-bottom: 65px;
+	}
+}
+/*---------------Media query Css End---------------*/
+/*-------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------Thankyou---------------------------------------------*/
