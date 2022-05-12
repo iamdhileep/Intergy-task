@@ -213,9 +213,28 @@ body{
 		margin-top: -40px !important;
 		margin-bottom: 65px;
 	}
+	.remove-field{
+		justify-content: end;
+		float: right !important;
+		position: relative !important;
+		margin-top: -810px !important;
+		display: block;
+		background: #fff;
+		border-radius: 50px;
+	}
 }
 /*---------------Media query Css End---------------*/
 /*-------------------------------------------------*/
+
+.remove-field{
+	justify-content: end;
+	float: right;
+	position: relative;
+	margin-top: -480px;
+	display: block;
+	background: #fff;
+	border-radius: 50px;
+}
 
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------Thankyou---------------------------------------------*/
